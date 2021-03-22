@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the letters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><strong>Timeo</strong> <em> l'orc érudit </em></h1>
+    <section>
+        <div id="menuDuJeu">
+            <button id="help" onclick="help()"> Règle du jeu et commande </button>
+            <a href="#canvas"><button id="start" onclick="start()"> Start / Restart </button></a>
+        </div>
+        <p id="acceuil">
+            Je suis le grand shaman orc gneeee et je te souhaite la bienvenue! <br>
+            Tu veux apprendre à lire et à écrire?<br> Gnee ! <br>
+            En latin en plus ! <br>
+            Mais tu es un orc abrutit ! <br> Quoi?! <br> Tu veux devenir un orc érudit ???!! <br>
+            Commence déja par lire les règles du jeux! <br> Gneeee !!! <br>
+            Si tu comprend les règles et que tu as bien saisis ton prénom, tu devrais t'en sortir. <br>
+            Bonne Chance  ! Gneeee ! ! ! ! 
+        </p>
+        <p id="regle">
+            Le but du jeu est d'attraper les lettres. Gneee! Tu peux te déplacer avec les flèches directionnelles de ton clavier.
+            Pour attraper les lettres il te suffit de marcher sur la même cellule qu'elle!
+            Tu découvriras un message caché si tu attrapes toutes les lettres sinon tu peux oublier le dinner de ce soir ! 
+        </p>
+        <canvas id="canvas" width="500px" height="500px"></canvas>
+        <script src="game.js" type="text/javascript"></script>
+    </section>
+</body>
+</html>
