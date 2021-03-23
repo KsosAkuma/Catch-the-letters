@@ -62,10 +62,10 @@ button:link{
     box-shadow: 10px 10px 5px rgba(0, 0, 0), -10px 10px 5px rgba(0, 0, 0),
      -10px -10px 5px rgba(0, 0, 0), 10px -10px 5px rgba(0, 0, 0);
 }
-#acceuil{
+#accueil{
     position: absolute;
     display: block;
-    top: 30em;
+    top: 35em;
     left:calc(50% - 250px);
     text-align: center;
     background-color: rgba(245, 245, 220, 0.356);
@@ -79,7 +79,7 @@ button:link{
 #regle{
     position: absolute;
     display: none;
-    top: 30em;
+    top: 35em;
     left:calc(50% - 250px);
     text-align: center;
     background-color: rgba(245, 245, 220, 0.356);
@@ -90,9 +90,14 @@ button:link{
     border-radius: 5%;
     padding: 30px;
 }
-
-/* .orco{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-} */
+@media all and (max-width:960px){
+    #regle, #accueil{
+        top: 50em;
+    }
+    #canvas{
+        top:60em;
+    }
+    body{
+        height: 90em;
+    }
+}

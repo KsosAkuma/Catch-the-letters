@@ -20,8 +20,9 @@ Le Jeu:
 //test alert
 let user;
 //var global
+const btnAccueil = document.getElementById('btnAccueil');
 const regle = document.getElementById('regle');
-const acceuil = document.getElementById('acceuil')
+const accueil = document.getElementById('accueil')
 var canvas = document.getElementById("canvas");
 canvas.width = 500;
 canvas.height = 500;
@@ -181,7 +182,14 @@ function quelPage(currentPage){
 
     }
 }
-// page d'acceuil
+// page d'accueil
+function pageAccueil(){
+    canvas.style.display = 'none';
+    accueil.style.display = 'block';
+    regle.style.display = 'none';
+
+}
+// page d'accueil
 function bienvenue(){
     canvas.style.display = 'none';
     orco.onload = animate;
@@ -189,7 +197,7 @@ function bienvenue(){
 }
 //function du bouton start/restart
 function start(){
-    acceuil.style.display = 'none';
+    accueil.style.display = 'none';
     regle.style.display = 'none';
     currentPage = 1;
     canvas.style.display ='block';
@@ -211,7 +219,7 @@ function start(){
 }
 function help(){
     canvas.style.display = 'none';
-    acceuil.style.display = 'none';
+    accueil.style.display = 'none';
     regle.style.display = 'block';
 
 }
